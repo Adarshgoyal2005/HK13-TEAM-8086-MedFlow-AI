@@ -1,25 +1,25 @@
-🏥 MedFlow AI: Smart Healthcare Queue Management
-MedFlow AI ek advanced patient management system hai jo Reinforcement Learning (PPO) aur Gradient Boosting (CatBoost) ka use karke hospital queues ko optimize karta hai aur patient wait-time ko reduce karta hai.
+🏥 MedFlow AI: Intelligent Healthcare Queue Management
+MedFlow AI is an advanced patient management system that leverages Reinforcement Learning (PPO) and Gradient Boosting (CatBoost) to optimize hospital queues and minimize patient wait times.
 
 🚀 Key Features
-AI-Driven Appointment Booking: Patient details ke sath priority-based booking.
+AI-Optimized Booking: Multi-step appointment booking with real-time triage priority.
 
-Dynamic Queue Optimization: RL Agent (PPO) use karke real-time mein queue ko reshuffle karna (Stay, Swap, or Priority).
+Dynamic Queue Reshuffling: Utilizes a PPO Reinforcement Learning agent to make "Stay", "Swap", or "Priority" decisions for the queue.
 
-Wait-Time Prediction: CatBoost model patient ki age aur triage category ke basis par consultation time predict karta hai.
+Wait-Time Prediction: Integrates a CatBoost regressor to predict consultation duration based on patient age and triage category.
 
-Doctor Dashboard: Real-time visibility of AI-optimized queue and patient priority badges.
+Live Doctor Dashboard: Real-time visibility into the optimized queue with AI-driven priority badges.
 
-🧠 AI Models Used
-CatBoost Regressor: Consultation duration predict karne ke liye. Ise Age aur TriageCategory jaise features par train kiya gaya hai.
+🧠 AI Model Architecture
+CatBoost Regressor: Used for predicting the consultation duration. It processes features like Age and TriageCategory to provide an accurate ETA for each patient.
 
-PPO (Proximal Policy Optimization): Ek Deep Reinforcement Learning agent jo hospital ki efficiency badhane ke liye optimal scheduling decisions leta hai.
+PPO (Proximal Policy Optimization): A Deep Reinforcement Learning model acting as the system's "Decision Maker". It analyzes the queue state to optimize throughput and prioritize critical cases automatically.
 
 🛠️ Tech Stack
-Frontend: React.js, Tailwind CSS, Lucide Icons, Framer Motion.
+Frontend: React.js, Tailwind CSS, Framer Motion, Lucide Icons.
 
 Backend: FastAPI (Python), Uvicorn.
 
-Database: MySQL (XAMPP).
+Database: MySQL (via SQLAlchemy).
 
-Libraries: catboost, stable-baselines3, sqlalchemy, axios.
+AI Libraries: catboost, stable-baselines3 (PPO), pandas.
