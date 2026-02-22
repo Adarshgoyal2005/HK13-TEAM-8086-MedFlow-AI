@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+catboost
+stable-baselines3
+sqlalchemy
+pymysql
+pandas
