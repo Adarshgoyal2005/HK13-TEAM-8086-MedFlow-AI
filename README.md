@@ -1,73 +1,25 @@
-# Welcome to your Lovable project
+🏥 MedFlow AI: Smart Healthcare Queue Management
+MedFlow AI ek advanced patient management system hai jo Reinforcement Learning (PPO) aur Gradient Boosting (CatBoost) ka use karke hospital queues ko optimize karta hai aur patient wait-time ko reduce karta hai.
 
-## Project info
+🚀 Key Features
+AI-Driven Appointment Booking: Patient details ke sath priority-based booking.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Dynamic Queue Optimization: RL Agent (PPO) use karke real-time mein queue ko reshuffle karna (Stay, Swap, or Priority).
 
-## How can I edit this code?
+Wait-Time Prediction: CatBoost model patient ki age aur triage category ke basis par consultation time predict karta hai.
 
-There are several ways of editing your application.
+Doctor Dashboard: Real-time visibility of AI-optimized queue and patient priority badges.
 
-**Use Lovable**
+🧠 AI Models Used
+CatBoost Regressor: Consultation duration predict karne ke liye. Ise Age aur TriageCategory jaise features par train kiya gaya hai.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+PPO (Proximal Policy Optimization): Ek Deep Reinforcement Learning agent jo hospital ki efficiency badhane ke liye optimal scheduling decisions leta hai.
 
-Changes made via Lovable will be committed automatically to this repo.
+🛠️ Tech Stack
+Frontend: React.js, Tailwind CSS, Lucide Icons, Framer Motion.
 
-**Use your preferred IDE**
+Backend: FastAPI (Python), Uvicorn.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Database: MySQL (XAMPP).
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Libraries: catboost, stable-baselines3, sqlalchemy, axios.
